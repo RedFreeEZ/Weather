@@ -5,47 +5,52 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class Weather {
     private static String charset = "utf-8";
-    private static String URL = "https://pogoda7.ru/prognoz/RU-Russia";//https://www.gismeteo.ru  https://www.gismeteo.ru/weather-perm-4476/now/
+    private static String URL = "https://pogoda7.ru/prognoz/RU-Russia/r3266-LNR";//https://www.gismeteo.ru  https://www.gismeteo.ru/weather-perm-4476/now/
+    private List<String> cityList;
+    private List<String> tempList;
+    private String CityNowFound;
+    private String TempNowFound;
 
-    public String CityName() {
+    public String MapCityAndTemp() {
         try {
-
+//  System.out.println(city.text()); Выводит и Название города и Температуру в строке
             Document document = Jsoup.connect(URL).get();
             document.outputSettings().charset(charset);
 
-            Elements city = document.select("div.listing > ul > li > a");//div.city
+            Elements city = document.select("div.listing > ul > li.gorod");//div.city// div.listing > ul > li > a
             Elements temperature = document.select("div.listing > ul > li > span.weather_temp_image > span.weather_temp");// weather-value div.temperature
 
             HashMap<String, String> CAT = new HashMap<>();
 
-            String[] cArr = city.text().replace(" ", ",").split(",");
-            String[] tArr = temperature.text().replace(" ", ",").split(",");
-
-            List<String> cityList = new ArrayList<>(Arrays.asList(cArr));
-            List<String> tempList = new ArrayList<>(Arrays.asList(tArr));
-
+            String[] cArr = city.text().split("°");// через запятую отделяем города
+            String[] tArr = temperature.text().split(" ");// через запятую отделяем Температуру
+//
+            cityList = new ArrayList<>(Arrays.asList(cArr));//
+            tempList = new ArrayList<>(Arrays.asList(tArr));//
             for (int i = 0; i < tempList.size(); i++) {
-                if (cityList.get(i) == cityList.get(5)) {
-                    cityList.remove(cityList.get(5));
-                }
-                CAT.put(cityList.get(i), tempList.get(i));
+                CAT.put(Parser.ParserChar(cityList.get(i)), tempList.get(i));// В цикле проходимся по Городам и Температуре, вбиваем туда значения по принципу: Ключ-Значение;
             }
-            System.out.println(CAT);
+            System.out.println("Список городов:" + CAT);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    public void CityAndTemp(){
+    public String FindCity(String CityFind) {
 
+        for (int i = 0; i < cityList.size(); i++) {
+            if (CityFind.equals(Parser.ParserChar(cityList.get(i)))) {
+                CityNowFound = Parser.ParserChar(cityList.get(i));  //Убрать дубликаты
+                TempNowFound = tempList.get(i);                     //Убрать дубликаты
+            }
+        }
+        System.out.printf("Город найден: %s; Температура на данный момент: %s;", CityNowFound, TempNowFound);
+        return CityFind;
     }
 }
 //https://www.gismeteo.ru/ //https://world-weather.ru/pogoda/russia/vladimir/
