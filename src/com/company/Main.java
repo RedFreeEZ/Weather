@@ -11,9 +11,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Weather weather = new Weather();
+        Weather weather = new Weather("33");
         weather.MapCityAndTemp();
-        weather.FindCity("Нижняя Дуванка");
-
+        weather.FindCity("Владимир");
+        weather.getWeatherFor8Days();
     }
 }
