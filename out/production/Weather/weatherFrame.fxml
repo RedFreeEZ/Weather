@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weather.Weather">
+   <children>
+      <ComboBox layoutX="114.0" layoutY="132.0" prefHeight="45.0" prefWidth="442.0" promptText="Область" />
+      <ComboBox layoutX="114.0" layoutY="221.0" prefHeight="45.0" prefWidth="442.0" promptText="Район" />
+      <ComboBox layoutX="114.0" layoutY="310.0" prefHeight="45.0" prefWidth="442.0" promptText="Город" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="383.0" layoutX="675.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="640.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="383.0" layoutX="1355.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="383.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="47.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="278.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="509.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="971.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="740.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="1433.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="1664.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="332.0" layoutX="1202.0" layoutY="513.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+      <Text layoutX="107.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="41.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="149.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="380.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="338.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="41.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="569.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="41.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="611.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="842.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="800.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="41.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="1019.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" wrappingWidth="64.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="1084.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="1315.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="1250.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15" wrappingWidth="64.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="1481.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" wrappingWidth="64.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="1546.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="1777.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="47.6708984375">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="1712.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21" wrappingWidth="64.6708984375">
+         <font>
+            <Font name="Poor Richard" size="72.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="62.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="293.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="524.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="755.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="986.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1217.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1448.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1679.0" layoutY="731.0" prefHeight="83.0" prefWidth="179.0" text="0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
