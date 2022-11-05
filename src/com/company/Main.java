@@ -15,5 +15,6 @@ public class Main {
         weather.MapCityAndTemp();
         weather.FindCity("Рублево");
         weather.getWeatherFor8Days();
+        weather.getCityUrlByName("Рублево");
     }
 }
